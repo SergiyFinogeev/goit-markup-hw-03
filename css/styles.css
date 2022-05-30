@@ -22,6 +22,8 @@ ul{
 
 img {
     display: block;
+    width:100%; 
+    height:auto;
 }
 
 body {
@@ -146,6 +148,9 @@ body {
     text-transform: uppercase;
     color: var(--third-text-color);
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn {
     font-family: inherit;
@@ -247,12 +252,18 @@ body {
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
+.team-item {
+    background-color: var(--third-text-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .team-card {
     background-color: var(--third-text-color);
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    border-radius: inherit;
 }
 
 .team-item-title {
@@ -288,8 +299,7 @@ body {
     color: var(--third-text-color);
     margin-bottom: 20px;
 }
-.address-link, 
-.address-mail {
+.address-item:not(:last-child) {
     margin-bottom: 10px;
 }
 
@@ -351,7 +361,7 @@ body {
 .portfolio-filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
     margin-right: 8px;
@@ -377,13 +387,11 @@ body {
 }
 .portfolio-item {
     margin: 15px;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-card {
     background-color: var(--third-text-color);
     padding: 20px 24px;
     text-align: left;
-    border-right:1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
 }
